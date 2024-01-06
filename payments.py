@@ -12,8 +12,8 @@ def payments():
     key = micro.login()
     # shifts = crud.get_all_shifts(db=session)
     # last_processed_payment = crud.get_last_added_payment(db=session)
-    start_date = datetime(2022, 7, 1)
-    end_date = datetime(2022, 9, 30)
+    start_date = datetime(2022, 1, 1)
+    end_date = datetime(2022, 12, 31)
     current_date = start_date
 
     while current_date <= end_date:
