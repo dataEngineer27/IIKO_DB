@@ -220,7 +220,7 @@ class Payments(Base):
     order_id = Column(String, nullable=True)  # UUID(as_uuid=True)
     order_num = Column(Integer, nullable=True)
     payment_type_id = Column(String, nullable=True)  # UUID(as_uuid=True)
-    payment_id = Column(String, nullable=True)  # UUID(as_uuid=True)
+    payment_id = Column(String, index=True, nullable=True)  # UUID(as_uuid=True)
     payment_type_group = Column(String, nullable=True)
     payment_type = Column(String, nullable=True)
     nomenclature_id = Column(String, nullable=True)  # UUID(as_uuid=True)
