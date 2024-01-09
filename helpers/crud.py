@@ -139,8 +139,7 @@ def add_nomenclatures(db: Session, nomenclature_list):
         main_unit = nomenclature['mainUnit'] if 'mainUnit' in nomenclature else None
         price = nomenclature['defaultSalePrice'] if 'defaultSalePrice' in nomenclature else None
         place_type = nomenclature['placeType'] if 'placeType' in nomenclature else None
-        included_in_menu = nomenclature[
-            'defaultIncludedInMenu'] if 'defaultIncludedInMenu' in nomenclature else None
+        included_in_menu = nomenclature['defaultIncludedInMenu'] if 'defaultIncludedInMenu' in nomenclature else None
         product_type = nomenclature['type'] if 'type' in nomenclature else None
         unit_weight = nomenclature['unitWeight'] if 'unitWeight' in nomenclature else None
         query = models.Nomenclatures(id=id,
