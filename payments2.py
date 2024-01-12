@@ -9,7 +9,7 @@ def payments():
     # shifts = crud.get_all_shifts(db=session)
     # last_processed_payment = crud.get_last_added_payment(db=session)
     start_date = datetime(2023, 12, 31)
-    end_date = datetime(2023, 12, 31)
+    end_date = datetime(2024, 1, 11)
     current_date = start_date
 
     while current_date <= end_date:
